@@ -18,6 +18,7 @@ describe("Accommodation Model", () => {
       rooms: 3,
       userId: user._id,
     });
+    // liten kommentar
 
     expect(acc).toBeDefined();
     expect(acc.city).toBe("Stockholm");
