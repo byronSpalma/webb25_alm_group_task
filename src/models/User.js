@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const Accommodation = require("./Accommodation");
+const Accommodation = require("./accommodation");
 
 userSchema.pre("findOneAndDelete", async function (next) {
   const userId = this.getQuery()._id;
