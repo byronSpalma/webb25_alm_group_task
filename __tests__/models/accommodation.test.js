@@ -19,7 +19,7 @@ describe("Accommodation Model", () => {
       userId: user._id,
     });
     // liten kommentar
-
+//en till liten kommentar för test
     expect(acc).toBeDefined();
     expect(acc.city).toBe("Stockholm");
     expect(acc.userId.toString()).toBe(user._id.toString());
