@@ -1,12 +1,13 @@
-const { MongoMemoryServer } = require("mongodb-memory-server");
-const mongoose = require("mongoose");
-const { beforeAll, afterAll, afterEach } = require("vitest");
+import { MongoMemoryServer } from "mongodb-memory-server";
+import mongoose from "mongoose";
+import { beforeAll, afterAll, afterEach } from "vitest";
 
 let mongoServer;
 
 beforeAll(async () => {
   mongoServer = await MongoMemoryServer.create();
   await mongoose.connect(mongoServer.getUri());
+  await mongoose.syncIndexes();
 });
 
 afterEach(async () => {
@@ -19,8 +20,4 @@ afterEach(async () => {
 afterAll(async () => {
   await mongoose.disconnect();
   await mongoServer.stop();
-});
-
-beforeEach(async () => {
-  await User.deleteMany({});
 });
