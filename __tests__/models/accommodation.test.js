@@ -1,3 +1,8 @@
+/**
+ * Enhetstester för Accommodation-modellen.
+ * Testar skapande, validering och kaskaderad borttagning av boendeannons.
+ */
+
 import "../test-setup.js";
 import { describe, it, expect } from "vitest";
 const User = require("../../src/models/User.js");
@@ -18,8 +23,6 @@ describe("Accommodation Model", () => {
       rooms: 3,
       userId: user._id,
     });
-    // liten kommentar
-//en till liten kommentar för test
     expect(acc).toBeDefined();
     expect(acc.city).toBe("Stockholm");
     expect(acc.userId.toString()).toBe(user._id.toString());

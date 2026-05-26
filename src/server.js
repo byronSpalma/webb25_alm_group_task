@@ -1,3 +1,8 @@
+/**
+ * Huvudserver för Express-applikationen.
+ * Hanterar anslutning till MongoDB och definierar API-rutter.
+ */
+
 const express = require("express");
 const connectDB = require("./config/database");
 const UserRouter = require("./routes/User");

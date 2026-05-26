@@ -1,3 +1,8 @@
+/**
+ * Mongoose-schema för Accommodation-modellen.
+ * Representerar en boendeannons med adress, stad, land, postnummer, hyra och antal rum.
+ */
+
 const mongoose = require("mongoose");
 
 const accommodationSchema = new mongoose.Schema({

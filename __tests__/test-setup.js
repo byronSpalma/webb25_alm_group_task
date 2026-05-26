@@ -1,3 +1,8 @@
+/**
+ * Testkonfiguration med in-memory MongoDB.
+ * Sätter upp och stänger ner MongoDB-minneserver före och efter tester.
+ */
+
 import { MongoMemoryServer } from "mongodb-memory-server";
 import mongoose from "mongoose";
 import { beforeAll, afterAll, afterEach } from "vitest";

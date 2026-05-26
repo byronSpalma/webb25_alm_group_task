@@ -1,3 +1,8 @@
+/**
+ * Enhetstester för User-modellen.
+ * Testar skapande, validering av e-post, unika fält och profilbildvalidering.
+ */
+
 import "../test-setup.js";
 import { describe, it, expect } from "vitest";
 const User = require("../../src/models/User");
