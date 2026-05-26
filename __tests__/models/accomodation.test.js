@@ -1,7 +1,7 @@
 import "../test-setup.js";
 import { describe, it, expect } from "vitest";
 const User = require("../../src/models/User");
-const Accommodation = require("../../src/models/Accommodation");
+const Accommodation = require("../../src/models/Accommodation.js");
 
 describe("Accommodation Model", () => {
   const createUser = () =>
