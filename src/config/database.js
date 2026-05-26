@@ -1,3 +1,8 @@
+/**
+ * Databaskonfiguration för MongoDB-anslutning.
+ * Ansluter till MongoDB med hjälp av Mongoose ORM.
+ */
+
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 

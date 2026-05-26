@@ -1,3 +1,8 @@
+/**
+ * API-rutter för User-resursen.
+ * Hanterar CRUD-operationer för användare (GET, POST, PUT, DELETE).
+ */
+
 const User = require("../models/User");
 const router = require("express").Router();
 
